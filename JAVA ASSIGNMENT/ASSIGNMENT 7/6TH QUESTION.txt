@@ -1,0 +1,20 @@
+package com.naveen;
+
+import java.util.ArrayList;
+
+
+class Lambda3 {
+    public static void main(String[] args) {
+        ArrayList<String> replace = new ArrayList<>();
+        replace.add("naveen");
+        replace.add("kumar");
+        replace.add("radha");
+        replace.add("geetha");
+        replace.add("seetha");
+
+      replace.replaceAll((String) ->
+             String.equals(replace) ? String:String.toUpperCase()); //replacing replace elements to uppercase//
+
+        System.out.println(replace); //printing words after changing to upper case
+    }
+}
