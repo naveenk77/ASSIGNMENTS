@@ -1,6 +1,3 @@
-package ASSIGNMENTS.ASSIGNMNET6;
-
-
     public class Order{
         private int price;
         private String status;
