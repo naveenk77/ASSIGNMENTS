@@ -38,5 +38,10 @@ public class EmployeeController {
 	{
 		return repository.findAll();
 	}
+	@PutMapping("/updateEmployee")
+ public void updateEmployee(@RequestBody Employee employee) {
+	if (employee != null)
+	    repository.save(employee);
+}
 	
 }
