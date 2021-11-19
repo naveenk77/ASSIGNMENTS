@@ -1,0 +1,251 @@
+OBJECT ---->
+---------------------------------------------------------
+public class ObectExample {
+    static class Dog {
+
+        String breed;   //DATA MEMBERS OR STATE OF OBJECT DOG//
+        String size;
+        int age;
+        String colour;
+
+        public String getInfo() {
+            return ("Breed is: " + breed + " Size is:" + size + " Age is:" + age + " color is: " + colour);
+
+        }
+    }
+
+
+        public static void main(String[] args) {
+            Dog puppy = new Dog(); //creating object of dog//
+            puppy.breed="German Shepherd";
+            puppy.size="Small";
+            puppy.age=2;
+            puppy.colour="white";
+            System.out.println(puppy.getInfo());
+
+            Dog snoopy = new Dog();
+            snoopy.breed="labrador";
+            snoopy.size="Big";
+            snoopy.age=6;
+            snoopy.colour="black";
+            System.out.println(snoopy.getInfo());
+        }
+    }
+
+
+
+---------------------------------------------------------------
+----------------------------------------------------------------
+
+proggrammming lang--->
+platform indepedent..
+oops--->
+high level
+
+---------------
+oops--object oriented prgrmng
+
+
+state-->data-->name,age,gender,colr.....
+behavior-->methods-->sleep(),run(),eat,jump
+
+to intialize-->new
+clasname object=new classname();
+
+
+dog-->
+state-->breed,age,clr,size....
+methods-->sleep(),bark(),eat()
+
+
+bank-->
+--->ne ac num,ne name,ne phn,-->
+
+method -->tranfrng monney,checking bal,withdrawring
+----------------------------------------------------------------
+
+class-->objects,methods,implementation,constructers,...
+
+
+syntax:- class ClassName{  --->class Dog,class BankingSystem
+}
+
+-----------------------------------------------------------------
+
+inheritance,polymorphism,eencapsulation,abstraction------------->
+
+inheritance--->
+
+inheriting properties from parent to child....
+
+to achieve inheritance EXTENDS keyword used....
+
+
+syntax: class A ///class subclass-name extends superclass name
+{
+--------properties
+}
+
+class B extends A
+{
+--------properties
+}
+
+types:-
+
+1.single
+2.multi-level
+3.heirarchical
+
+single--------->
+
+one class inherits --another class
+
+class A ///class subclass-name extends superclass name
+{
+--------properties
+}
+
+class B extends A
+{
+--------properties
+}
+
+multilvel ------->
+
+class A
+{
+------implementations
+}
+class B extends A
+{
+----implemetantion
+}
+
+class C extends B
+{
+
+
+}
+----------------------------
+
+
+herirachical--->
+
+
+one or more classes inehrites the properties from single class
+
+class A
+{
+------implementations
+}
+class B extends A
+{
+----implemetantion
+}
+
+class C extends A
+{
+
+}
+
+------------------------------
+
+class employee
+{
+int sal=600000;
+void salaryinfo()
+{
+System.out.println(sal);
+
+}
+}
+class developers extends employee
+{
+int hike=5000;
+void salaryinfo()
+{
+s.o.p(total sal:sal+hike)
+}
+class tester extends employee
+{
+int hike=2000;
+void salaryinfo()
+{
+s.o.p(total sal:sal+hike)
+}
+
+--------->code resuability 
+--------->reduce repeated code 
+-------->method overriding,polymorphism
+
+----------------------------------------------->
+
+abstraction---->
+
+hiding un necessary details and showing only neccessary details----
+
+abstract class Bank{    
+abstract int getRateOfInterest();    
+}    
+class SBI extends Bank{    
+int getRateOfInterest(){return 7;}    
+}    
+class PNB extends Bank{    
+int getRateOfInterest(){return 8;}    
+}    
+    
+class TestBank{    
+public static void main(String args[]){    
+Bank b;  
+b=new SBI();  
+System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");    
+b=new PNB();  
+System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");    
+}}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
