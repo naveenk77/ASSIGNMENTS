@@ -6,8 +6,7 @@ public class Question {
 	int questionId;
 	String question;
 	List<String> answers;
-	//Set<String> answers;
-	//Map<Integer, String> answers;
+	
 	
 	public Question() {}
 	
@@ -40,15 +39,7 @@ public class Question {
 		this.answers = answers;
 	}
 	
-	/*
-	 * public Set<String> getAnswers() { return answers; } public void
-	 * setAnswers(Set<String> answers) { this.answers = answers; }
-	 */
 	
-	/*
-	 * public Map<Integer, String> getAnswers() { return answers; } public void
-	 * setAnswers(Map<Integer, String> answers) { this.answers = answers; }
-	 */
 	
 	@Override
 	public String toString() {
