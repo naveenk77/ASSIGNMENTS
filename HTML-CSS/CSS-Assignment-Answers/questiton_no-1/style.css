@@ -1,0 +1,14 @@
+h1{
+    margin: 0;
+    padding-bottom: 15px;
+    background-color: rgb(231, 197, 2);
+}
+
+div{
+    background-color: lightgray;
+}
+
+p{
+    padding-bottom: 15px;
+    background-color: lightblue;
+}
